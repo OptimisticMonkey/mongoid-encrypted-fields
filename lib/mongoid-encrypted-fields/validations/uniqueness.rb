@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 module Mongoid
-  module Validations # renamed to module Validatable in Mongoid 4.0
+  module Validatable # renamed to module Validatable in Mongoid 4.0
 
     # Monkey-patch for Mongoid's uniqueness validator to enforce that the :case_sensitive option does not work
     # for encrypted fields; they must always be case-sensitive.
